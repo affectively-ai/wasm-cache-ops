@@ -1,7 +1,7 @@
 [package]
 name = "affectively-cache-ops"
 version = "1.0.0"
-authors = ["AFFECTIVELY <opensource@affectively.app>"]
+authors = ["AFFECTIVELY <opensource@affectively.ai>"]
 edition = "2021"
 license = "MIT"
 description = "High-performance caching operations for WebAssembly - batch ops, compression, eviction, hashing"
@@ -17,6 +17,10 @@ wasm-bindgen = "0.2"
 js-sys = "0.3"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
+console_error_panic_hook = "0.1"
+sha2 = "0.10"
+flate2 = "1.0"
+hex = "0.4"
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3"
