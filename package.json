@@ -1,0 +1,38 @@
+{
+    "name": "@affectively/wasm-cache-ops",
+    "version": "1.0.0",
+    "description": "High-performance WebAssembly caching operations - batch ops, compression, eviction, hashing.",
+    "main": "pkg/wasm_cache_ops.js",
+    "types": "pkg/wasm_cache_ops.d.ts",
+    "files": [
+        "pkg",
+        "src",
+        "Cargo.toml",
+        "LICENSE",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "wasm-pack build --target web --out-dir pkg",
+        "build:node": "wasm-pack build --target nodejs --out-dir pkg-node",
+        "test": "cargo test"
+    },
+    "keywords": [
+        "wasm",
+        "webassembly",
+        "cache",
+        "caching",
+        "compression",
+        "hashing",
+        "lru",
+        "rust"
+    ],
+    "author": "AFFECTIVELY <opensource@affectively.app>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/affectively-ai/wasm-cache-ops.git"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
