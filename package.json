@@ -1,6 +1,6 @@
 {
   "name": "@affectively/wasm-cache-ops",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "High-performance WebAssembly caching operations - batch ops, compression, eviction, hashing.",
   "main": "pkg/wasm_cache_ops.js",
   "types": "pkg/wasm_cache_ops.d.ts",
@@ -27,7 +27,7 @@
     "rust"
   ],
   "author": "AFFECTIVELY <opensource@affectively.ai>",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/affectively-ai/wasm-cache-ops.git"
