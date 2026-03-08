@@ -1,5 +1,4 @@
 use sha2::{Sha256, Digest};
-use hex;
 
 /// Hash a query JSON string for fingerprinting
 /// Uses SHA-256 for deterministic hashing

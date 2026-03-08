@@ -55,12 +55,12 @@ pub fn deserialize_document_wasm(serialized: &str) -> String {
 }
 
 /// Compress data using gzip
-/// 
+///
 /// # Arguments
 /// * `data` - String data to compress
-/// 
+///
 /// # Returns
-/// Base64-encoded compressed data
+/// Gzip-compressed bytes
 #[wasm_bindgen]
 pub fn compress_data_wasm(data: &str) -> Vec<u8> {
     compress_data(data)

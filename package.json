@@ -27,7 +27,7 @@
     "rust"
   ],
   "author": "AFFECTIVELY <opensource@affectively.ai>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/affectively-ai/wasm-cache-ops.git"
