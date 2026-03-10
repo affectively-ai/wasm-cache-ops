@@ -1,6 +1,6 @@
 {
   "name": "@affectively/wasm-cache-ops",
-  "version": "1.0.3",
+  "version": "5.0.0",
   "description": "High-performance WebAssembly caching operations - batch ops, compression, eviction, hashing.",
   "main": "pkg/wasm_cache_ops.js",
   "types": "pkg/wasm_cache_ops.d.ts",
