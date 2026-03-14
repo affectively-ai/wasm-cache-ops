@@ -1,17 +1,14 @@
 # @affectively/wasm-cache-ops
 
-High-performance WebAssembly caching operations written in Rust.
+`@affectively/wasm-cache-ops` is a Rust/WebAssembly module for cache-oriented batch operations and related helpers.
 
-[![npm version](https://img.shields.io/npm/v/@affectively/wasm-cache-ops.svg)](https://www.npmjs.com/package/@affectively/wasm-cache-ops)
-[![crates.io](https://img.shields.io/crates/v/affectively-cache-ops.svg)](https://crates.io/crates/affectively-cache-ops)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+The fair brag is that it keeps a cache-heavy workflow small and fast: batch reads and writes, compression, and helper operations all sit behind one WASM boundary.
 
-## Features
+## What It Helps You Do
 
-- **Batch Operations** - Efficient bulk cache operations
-- **Compression** - LZ4-style compression for cached data
-- **Eviction Policies** - LRU, LFU, and TTL-based eviction
-- **Fast Hashing** - High-performance hash functions
+- perform batch cache gets and sets
+- compress and decompress cached payloads
+- build cache-oriented logic around a smaller utility module
 
 ## Installation
 
@@ -21,24 +18,23 @@ npm install @affectively/wasm-cache-ops
 
 ## Quick Start
 
-```typescript
-import init, { batch_get, batch_set, compress, decompress } from '@affectively/wasm-cache-ops';
+```ts
+import init, {
+  batch_get,
+  batch_set,
+  compress,
+  decompress,
+} from '@affectively/wasm-cache-ops';
 
 await init();
 
-// Batch operations
 const results = batch_get(keys);
 batch_set(entries);
 
-// Compression
 const compressed = compress(data);
 const original = decompress(compressed);
 ```
 
-## License
+## Why This README Is Grounded
 
-MIT License - see [LICENSE](./LICENSE) for details.
-
----
-
-Made with ️ by [AFFECTIVELY](https://affectively.ai)
+Cache Ops does not need a bigger pitch than that. The strongest fair brag is that it already gives callers a focused WASM helper for a few high-value cache operations.
