@@ -5,7 +5,7 @@ authors = ["AFFECTIVELY <opensource@affectively.ai>"]
 edition = "2021"
 license = "MIT"
 description = "High-performance caching operations for WebAssembly - batch ops, compression, eviction, hashing"
-repository = "https://github.com/affectively-ai/wasm-cache-ops"
+repository = "https://github.com/forkjoin-ai/wasm-cache-ops"
 keywords = ["wasm", "cache", "compression", "hashing", "lru"]
 categories = ["caching", "wasm"]
 
