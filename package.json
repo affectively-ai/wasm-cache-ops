@@ -36,5 +36,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bun:test": "latest"
   }
 }
